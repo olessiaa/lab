@@ -1,8 +1,8 @@
+// utils.h
 #ifndef UTILS_H
 #define UTILS_H
 
-#include <string>
-
-void print_message(const std::string& message);
+int add(int a, int b);
+int multiply(int a, int b);  // Добавлено объявление функции умножения
 
 #endif
