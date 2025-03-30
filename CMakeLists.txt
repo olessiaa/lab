@@ -3,4 +3,6 @@ project(lab1_proga)
 add_executable(lab1_proga src/main.cpp src/utils.cpp)
 
 target_include_directories(lab1_proga PRIVATE src)
-target_link_options(lab1_proga PRIVATE $<$<PLATFORM_WINDOWS>:/SUBSYSTEM:CONSOLE>)
+if(WIN32)
+  target_link_options(lab1_proga PRIVATE /SUBSYSTEM:CONSOLE)
+endif()
